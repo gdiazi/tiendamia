@@ -1,5 +1,6 @@
 import cartReducer from "./cartReducer";
 import { configureStore } from "@reduxjs/toolkit";
+
 import {
   persistStore,
   persistReducer,
@@ -10,7 +11,9 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
+
 import storage from "redux-persist/lib/storage";
+//const stripe = require('stripe')('sk_test_iTygwMNLgwq0KTvTZuuXu2Pn');
 
 const persistConfig = {
   key: "root",
